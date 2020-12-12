@@ -7,6 +7,9 @@
 word = input("Word: ")
 res = ""
 for letter in word:
+    if letter == ' ':
+        res+= letter
+        continue
     if ord(letter) == ord('я'):
         res+='а'
     else:
